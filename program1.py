@@ -3,7 +3,7 @@ class Solution(object):
     def isValid(self, s):
         stack = [] # create an empty stack to store opening brackets
         for c in s: # loop through each character in the string
-            if c in '([{': # if the character is an opening bracket
+            if c in '([{': 
                 stack.append(c) # push it onto the stack
             else:
                 if not stack or \
