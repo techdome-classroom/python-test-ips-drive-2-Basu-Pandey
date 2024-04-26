@@ -10,7 +10,7 @@ class Solution(object):
                     (c == ')' and stack[-1] != '(') or \
                     (c == '}' and stack[-1] != '{') or \
                     (c == ']' and stack[-1] != '['):
-                    return False # the string is not valid, so return false
+                    return False 
                 stack.pop()
         return not stack 
     
